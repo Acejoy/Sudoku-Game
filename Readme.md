@@ -10,21 +10,27 @@ Th following files are present:
 ## Screenshots of Gameplay
 
 **Get the mode for playing**
+
 ![Get the mode for playing](/screenshots/ss1.png)
 
 **Initial screen**
+
 ![Initial screen](screenshots/ss2.png)
 
 **Valid but Wrong entry**
+
 ![Valid but Wrong entry](screenshots/ss3.png)
 
 **Solved Puzzle**
+
 ![Solved Puzzle](screenshots/ss4.png)
 
 **Valid and Correct Entry**
+
 ![Valid and Correct Entry](screenshots/ss5.png)
 
 **Invalid Entry**
+
 ![Invalid Entry](screenshots/ss6.png)
 
 ## How to run
