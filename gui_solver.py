@@ -79,12 +79,15 @@ class Grid:
         self.window.title('Sudoku Game')
         self.window.geometry('504x600')
         self.window.resizable(False, False)
+        self.bg_image = tk.PhotoImage(file='screen.png')
         self.canvas1 = tk.Canvas(self.window, width=504,
                             height=504,
                             bg='white')
         self.canvas2 = tk.Canvas(self.window, width=504,
                             height=96,
                             bg='white')
+        self.canvas2.create_image( 0, 0, image = self.bg_image, 
+                        anchor = "nw")
         self.validLabel = tk.Label(text='', font = Font_tuple2,
                                             relief='solid',
                                             borderwidth=1)
