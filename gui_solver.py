@@ -75,7 +75,7 @@ class Grid:
             self.window = tk.Toplevel()
         else:
             self.window = win
-            
+
         self.window.title('Sudoku Game')
         self.window.geometry('504x600')
         self.window.resizable(False, False)
@@ -91,15 +91,15 @@ class Grid:
         self.clockLabel = tk.Label(text='00:00', font = Font_tuple2,
                                                 relief='solid',
                                                 borderwidth=1)
-        self.Button1 = tk.Button(text='Print Puzzle', 
-                        command=self.print_query_puzzle,
-                         font = Font_tuple2)
+        # self.Button1 = tk.Button(text='Print Puzzle', 
+        #                 command=self.print_query_puzzle,
+        #                  font = Font_tuple2)
         self.Button2 = tk.Button(text='Solve Puzzle',
                          command=self.solve,
                           font = Font_tuple2)
         self.canvas2.create_window(60,30, window=self.validLabel)
         self.canvas2.create_window(200,30, window=self.clockLabel)
-        self.canvas2.create_window(450,30, window=self.Button1)        
+        #self.canvas2.create_window(450,30, window=self.Button1)        
         self.canvas2.create_window(300,30, window=self.Button2)        
         self.validatefunction = self.canvas1.register(self.isvalid)
         
@@ -162,9 +162,9 @@ class Grid:
 
 if __name__ == "__main__":
     
-    mode = input('Enter the mode{easy, medium, hard, test}:').lower()
+    mode = input('Enter the mode{easy, medium, hard}:').lower()
     #mode = 'easy'
-    if mode not in ['easy', 'medium', 'hard', 'test']:
+    if mode not in ['easy', 'medium', 'hard']:
         print('Enter correct mode')
     else:
         win = tk.Tk()
